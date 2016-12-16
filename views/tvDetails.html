@@ -1,0 +1,30 @@
+<div class="button-container">
+
+  <a href back-button class="button-back" title="Go back to home page.">
+    <i class="fa fa-angle-left"></i> Back
+  </a>
+</div>
+
+<div class="container">
+  <div class="single-tv row">
+
+    <div class="col-sm-5 tv-poster">
+      <img ng-src="http://image.tmdb.org/t/p/w370/{{tvData.poster_path}}" alt="{{tvData.title}}" />
+    </div><!-- .col-sm-5 -->
+    <div class="col-sm-7" style="color:white">
+      <h2>
+        {{tvData.title}}
+      </h2>
+
+      <ul class="tv-data-list row list-unstyled">
+        <li class="col-md-7" style="color:white">
+          <strong>Plot:</strong>
+          <p >{{tvData.overview}}</p>
+        </li>
+
+      </ul>
+
+    </div><!-- .col-sm-7 -->
+
+  </div>
+</div>

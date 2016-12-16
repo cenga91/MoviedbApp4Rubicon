@@ -1,0 +1,21 @@
+<div class="search-movies container">
+  <div class="search-wrapper">
+      <input class="search" type="text" placeholder="Filter movies..." ng-model="searchText" ng-change="searchMovie(text)" uib-typeahead="movie.title for movie in moviesList| filter:{title:$viewValue} |limitTo:20" typeahead-on-select="searchMovie(text)"/>
+  <!--     <input class="search" type="text" placeholder="Filter movies..." ng-model="searchText" ng-change="searchMovie(text)" uib-typeahead="movie.title for movie in searchMovie($viewValue)" typeahead-on-select="searchMovie(text)" typeahead-min-length="3"/> -->
+  </div>
+</div><br /> <br /> 
+
+<div class="container">
+  <div class="list-movies row">
+    <ul class="movies-thumb-list clearfix; ">
+      <li class="movie-item fade-anim; col-md-6" ng-repeat="movie in moviesList | limitTo:10">
+        <a ui-sref="movieDetails({id: movie.id})">
+          <img class="img-responsive img-thumbnail" onerror="this.src='img/img_not_available.png'" ng-src="http://image.tmdb.org/t/p/w370/{{movie.poster_path}}" alt="{{movie.title}}" /> 
+          <h4 class="text-center">{{movie.title}}</h4>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</div>

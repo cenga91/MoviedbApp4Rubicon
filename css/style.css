@@ -1,0 +1,65 @@
+.main-container{
+     padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom:1%;
+    padding-left: 5%;
+}
+body {
+  background-image: url("http://www.pptbackgrounds.org/uploads/film-movies-movie-making-minimalism-creative-backgrounds-wallpapers.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  }
+
+.footer {
+  color: white;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  margin:auto;
+  position:bottom;
+}
+.navbar{
+  padding-left: 17%;
+}
+.list-movies .movies-thumb-list .movie-item .movie-item{
+
+}
+      .list-movies .movies-thumb-list .movie-item img {
+        transition: opacity .35s;
+        opacity: .8;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-height:400px;
+         }
+
+      .list-movies .movies-thumb-list .movie-item h4 {
+
+        color: white; }
+
+      .list-movies .movies-thumb-list .movie-item:hover img {
+        opacity: 1;
+         }
+
+.search-movies .search {
+  font-size: 2.5em;
+  font-weight: 300;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  width: 60%;
+  height: 100px;
+  margin-left: -30%;
+  padding: 1em 4em 1em 30px; }
+.search-movies .search-wrapper {
+  height: 50px;
+  margin-bottom: 3em; }
+
+.button-back{
+  color: white;
+}
